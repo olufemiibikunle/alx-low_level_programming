@@ -1,3 +1,6 @@
+#include "alx.h"
+
+
 int main(void)
 {
 char *sh = "alx";
