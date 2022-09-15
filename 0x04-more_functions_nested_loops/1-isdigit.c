@@ -1,12 +1,17 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-*mul - multiplies two integers
-*@a: The first number to multiplies
-*@b: The second number to multiplies
-* Return: "a" and "b"
-*/
-int mul(int a, int b)
+ *   * _isdigit - Check if a character is a digit
+ *     * @x: The number to be checked
+ *       *
+ *         * Return: 1 for a character that will be a digit or 0 for any else
+ *           */
+int _isdigit(int x)
 {
-return (a * b);
+		if (x >= 48 && x <= 57)
+				{
+							return (1);
+								}
+
+			return (0);
 }
