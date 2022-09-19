@@ -1,17 +1,16 @@
 #include "main.h"
 
 /**
-* _puts - Prints a string
-* @str: The string to print
-*
-* Return: void
+* _puts - check the code for ALX School students.
+* @str: validate the character
+* Return: Always 0.
 */
 void _puts(char *str)
 {
-for (; *str != '\0'; str++)
+int i;
+for (i = 0; str[i] != '\0' ; i++)
 {
-_putchar(*str);
+_putchar(str[i]);
 }
-
 _putchar('\n');
 }
