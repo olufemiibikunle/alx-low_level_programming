@@ -1,25 +1,21 @@
 #include "main.h"
 
 /**
- *   * puts2 - Prints every other character of a string
- *     * @str: The string to be treated
- *       *
- *         * Return: void
- *           */
+ *  * puts2 - print reverse characters.
+ *   * @str: validate the character
+ *    * Return: Always 0.
+ *     */
 void puts2(char *str)
 {
-		int i;
-			int j = 0;
+		int i = 0;
 
-				while (str[j] != '\0')
-						{
-									j++;
-										}
-
-					for (i = 0; i < j; i += 2)
-							{
-										_putchar(str[i]);
+			while (str[i] != '\0')
+					{
+								if (i % 2 == 0)
+											{
+														_putchar(str[i]);
+																}
+										i++;
 											}
-
-						_putchar('\n');
+				_putchar('\n');
 }
