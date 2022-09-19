@@ -5,7 +5,7 @@
  *   * @str: pointer int type
  *    * Return: Always 0.
  *     */
-void puts_half(char *str)
+void _putchar(char *str)
 {
 	int i;
 	for (i = 0; *str != '\0'; i++)
