@@ -1,29 +1,16 @@
-#include "main.h"
+#include<main.h>
 
-
-/**
-* _puts - Prints a string
-* @str: The string to print
-*
-* Return: void
-*/
-
-
-void MyPrint(const char *str)
+int main()
 {
-	  int len = strlen(str) + 1;
-	    char *temp = alloca(len);
-
-	      int i;
-	        for (i = 0; i < len; i++)
-			  {
-				      char ch = str[i];
-				          if (ch == '\n')
-						        break;
-					      temp[i] = ch;
-					        }
-
-		  temp[i] = 0;
-
-		    puts(temp);
+		int ctr=0;
+			char str[]=" The quick brown fox \n jumps over the \n lazy dog. \n";	
+				printf("\n Print only the string before new line character :\n");  
+				    printf("----------------------------------------------------\n");	
+				    	while (isprint(str[ctr]))
+							{
+										putchar (str[ctr]);
+												ctr++;
+													}
+						printf("\n\n");
+							return 0;
 }
