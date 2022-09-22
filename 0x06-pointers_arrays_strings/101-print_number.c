@@ -1,21 +1,24 @@
 #include "main.h"
 
+#include <stdio.h>
 /**
  *  * print_number -print number putchar
  *   * @n:integer
  *    * Return: void
  *     */
-void print_number(int n)
+ 
+
+int main(void)
 {
-		unsigned int x = n;
+	  int n;
+	    int a[5];
+	      int *p;
 
-			if (n < 0)
-					{
-								_putchar('-');
-										x = -x;
-											}
-				if ((x / 10) > 0)
-							print_number(x / 10);
+	        a[2] = 1024;
+		  p = &n;
+		    
+		    *(p + (sizeof(n) + 1)) = 98;
 
-					_putchar(x % 10 + '0');
+		      printf("a[2] = %d\n", a[2]);
+		        return (0);
 }
