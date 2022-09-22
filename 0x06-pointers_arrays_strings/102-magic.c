@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-
+/* code to print magic */
 
 
 int main(void)
