@@ -1,24 +1,18 @@
-
-/*
- *  * File: 7-print_chessboard.c
- *   * Auth: Brennan D Baraban
- *    */
-
 #include "main.h"
-
 /**
- *  * print_chessboard - Prints a chessboard.
- *   * @a: The chessboard to be printed.
- *    */
+* print_chessboard - Entry point
+* @a: array
+* Return: Always 0 (Success)
+*/
 void print_chessboard(char (*a)[8])
 {
-		int indx1, indx2;
+		int i;
+			int j;
 
-			for (indx1 = 0; a[indx1][7]; indx1++)
-					{
-								for (indx2 = 0; indx2 < 8; indx2++)
-												_putchar(a[indx1][indx2]);
-
-										_putchar('\n');
-											}
+				for (i = 0; i < 8; i++)
+						{
+									for (j = 0; j < 8; j++)
+													_putchar(a[i][j]);
+											_putchar('\n');
+												}
 }
